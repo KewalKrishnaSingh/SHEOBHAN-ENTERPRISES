@@ -1,0 +1,15 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f7f7f7;color:#222;line-height:1.5}
+.topbar{background:#041b42;color:#fff;padding:10px 5%;display:flex;justify-content:space-between;flex-wrap:wrap}
+.navbar{background:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.logo{font-size:32px;font-weight:800;color:#0b234a}
+.logo span{color:#f2ad00}
+.nav-links a{text-decoration:none;color:#0b234a;margin-left:18px;font-weight:600}
+.hero{min-height:420px;background:linear-gradient(rgba(4,27,66,.78),rgba(4,27,66,.55)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;display:flex;align-items:center;padding:0 5%;color:#fff}
+.hero-content{max-width:700px}
+.hero h1{font-size:58px;line-height:1.08;margin-bottom:20px}
+.hero h1 span{color:#f2ad00}
+.section{padding:60px 5%}
+.section h2{margin-bottom:18px;color:#0b234a}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.card{background:#fff;padding:22px;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
