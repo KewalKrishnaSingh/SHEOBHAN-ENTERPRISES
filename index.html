@@ -4,7 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sheobhan Group</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+    body{background:#f7f7f7;color:#222;line-height:1.5}
+    .topbar{background:#041b42;color:#fff;padding:10px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;font-size:14px}
+    .navbar{background:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+    .logo{font-size:32px;font-weight:800;color:#0b234a}
+    .logo span{color:#f2ad00}
+    .nav-links{display:flex;align-items:center;gap:24px}
+    .nav-links a{text-decoration:none;color:#0b234a;font-weight:600}
+    .quote-btn{background:#f2ad00;color:#111;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:700}
+    .hero{min-height:560px;background:linear-gradient(rgba(4,27,66,.78),rgba(4,27,66,.55)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;display:flex;align-items:center;padding:0 5%;color:#fff}
+    .hero-content{max-width:700px}
+    .hero h1{font-size:64px;line-height:1.08;margin-bottom:20px;font-weight:800}
+    .hero h1 span{color:#f2ad00}
+    .hero p{font-size:21px;max-width:620px;margin-bottom:28px}
+    .section{padding:70px 5%}
+    .section-title{text-align:center;color:#0b234a;font-size:36px;margin-bottom:34px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{background:#fff;padding:26px 22px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .card h3{color:#0b234a;margin-bottom:10px;font-size:20px}
+    .brand-select{margin-top:12px;padding:10px;width:100%;border:1px solid #ddd;border-radius:6px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+    .project-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .project-card img{width:100%;height:180px;object-fit:cover}
+    .project-card div{padding:18px}
+    .footer{background:#041b42;color:#fff;text-align:center;padding:24px;margin-top:20px}
+    @media(max-width:900px){
+      .nav-links{display:none}
+      .hero h1{font-size:42px}
+    }
+  </style>
 </head>
 <body>
   <div class="topbar">
@@ -17,8 +47,8 @@
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
     </div>
+    <a href="#" class="quote-btn">Get a Quote</a>
   </div>
 
   <section class="hero">
@@ -29,24 +59,40 @@
   </section>
 
   <section class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">Passenger Lift</div>
-      <div class="card">Commercial Interiors</div>
-      <div class="card">Construction</div>
-      <div class="card">HVAC System</div>
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Passenger Lift</h3>
+        <p>Reliable and safe passenger elevators for all building types.</p>
+        <select class="brand-select">
+          <option>Select Brand</option>
+          <option>Otis</option>
+          <option>KONE</option>
+          <option>Schindler</option>
+          <option>TKE</option>
+          <option>Johnson</option>
+        </select>
+      </div>
+      <div class="card"><h3>Commercial Interiors</h3><p>Creative and functional interior solutions.</p></div>
+      <div class="card"><h3>Construction</h3><p>Residential, commercial and industrial construction.</p></div>
+      <div class="card"><h3>HVAC System</h3><p>Heating and air conditioning solutions.</p></div>
     </div>
   </section>
 
   <section class="section" id="projects">
-    <h2>Government Projects</h2>
-    <p>Executed infrastructure and institutional projects with quality and timely delivery.</p>
+    <h2 class="section-title">Government Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="">
+        <div><h3>IOCL Projects</h3><p>Executed works for Indian Oil infrastructure.</p></div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="">
+        <div><h3>Government Offices</h3><p>Delivered projects for multiple departments.</p></div>
+      </div>
+    </div>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: sheobhangroup@gmail.com</p>
-    <p>Phone: +91 6201103023</p>
-  </section>
+  <div class="footer">© 2026 Sheobhan Group. All Rights Reserved.</div>
 </body>
 </html>
